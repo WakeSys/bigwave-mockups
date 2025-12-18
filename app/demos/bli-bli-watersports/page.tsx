@@ -174,7 +174,7 @@ const contactInfo = {
 };
 
 export default function BliBliWatersportsPage() {
-  const bookingUrl = `${BOOKING_BASE_URL}/bli-bli-watersports/booking`;
+  const bookingUrl = `${BOOKING_BASE_URL}/blibliwatersports/booking`;
 
   return (
     <main className="font-[family-name:var(--font-quicksand)]">
