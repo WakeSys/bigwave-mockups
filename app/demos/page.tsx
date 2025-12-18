@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Waves, Anchor, Lock, ArrowRight } from 'lucide-react';
+import { Waves, Anchor, Lock, ArrowRight, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Park Demos | wakesys',

@@ -23,7 +23,7 @@ const activities = [
     price: '$45/person',
     duration: '2-3 hours',
     capacity: 'Self-paced',
-    image: '/generated/ropes-course/gallery-1.png',
+    image: '/generated/ropes-course/gallery-1.jpg',
     features: ['All 3 course levels', 'Harness & helmet', 'Safety briefing', 'Continuous belay system'],
   },
   {
@@ -32,7 +32,7 @@ const activities = [
     price: '$35/child',
     duration: '1.5-2 hours',
     capacity: 'Ages 5-11 only',
-    image: '/generated/ropes-course/gallery-2.png',
+    image: '/generated/ropes-course/gallery-2.jpg',
     features: ['Junior course only', 'Child-sized harness', 'Guide assistance', 'Parent can accompany'],
   },
 ];
@@ -97,9 +97,9 @@ const pricing = [
 ];
 
 const galleryImages = [
-  { src: '/generated/ropes-course/gallery-1.png', alt: 'Climber on high ropes' },
-  { src: '/generated/ropes-course/gallery-2.png', alt: 'Family adventure' },
-  { src: '/generated/ropes-course/gallery-3.png', alt: 'Zipline through forest' },
+  { src: '/generated/ropes-course/gallery-1.jpg', alt: 'Climber on high ropes' },
+  { src: '/generated/ropes-course/gallery-2.jpg', alt: 'Family adventure' },
+  { src: '/generated/ropes-course/gallery-3.jpg', alt: 'Zipline through forest' },
 ];
 
 const contactInfo = {
@@ -129,7 +129,7 @@ export default function RopesCoursePage() {
       <Hero
         title="Adventure Awaits Above"
         subtitle="Soar through the treetops on rope bridges, zip lines, and aerial challenges. Over 50 elements set among the beautiful Blue Ridge Mountains."
-        backgroundImage="/generated/ropes-course/hero.png"
+        backgroundImage="/generated/ropes-course/hero.jpg"
         overlayColor="from-emerald-900/70 via-emerald-800/40 to-transparent"
         badge="Open Year-Round"
         badgeClass="bg-emerald-600/90 text-white"

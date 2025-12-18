@@ -23,7 +23,7 @@ const activities = [
     price: '$18/child',
     duration: '3 hours',
     capacity: 'Unlimited play',
-    image: '/generated/indoor-playground/gallery-1.png',
+    image: '/generated/indoor-playground/gallery-1.jpg',
     features: ['All play structures', 'Ball pit access', 'Parent supervision area', 'Socks required'],
   },
   {
@@ -32,7 +32,7 @@ const activities = [
     price: '$12/child',
     duration: '3 hours',
     capacity: 'Ages 0-4 only',
-    image: '/generated/indoor-playground/gallery-2.png',
+    image: '/generated/indoor-playground/gallery-2.jpg',
     features: ['Dedicated toddler area', 'Soft surfaces', 'Parent required', 'Sensory activities'],
   },
 ];
@@ -97,9 +97,9 @@ const pricing = [
 ];
 
 const galleryImages = [
-  { src: '/generated/indoor-playground/gallery-1.png', alt: 'Kids on slides' },
-  { src: '/generated/indoor-playground/gallery-2.png', alt: 'Toddler play area' },
-  { src: '/generated/indoor-playground/gallery-3.png', alt: 'Birthday party celebration' },
+  { src: '/generated/indoor-playground/gallery-1.jpg', alt: 'Kids on slides' },
+  { src: '/generated/indoor-playground/gallery-2.jpg', alt: 'Toddler play area' },
+  { src: '/generated/indoor-playground/gallery-3.jpg', alt: 'Birthday party celebration' },
 ];
 
 const contactInfo = {
@@ -129,7 +129,7 @@ export default function IndoorPlaygroundPage() {
       <Hero
         title="Where Imagination Plays!"
         subtitle="Raleigh's favorite indoor playground. Climb, slide, bounce, and explore in our climate-controlled play paradise."
-        backgroundImage="/generated/indoor-playground/hero.png"
+        backgroundImage="/generated/indoor-playground/hero.jpg"
         overlayColor="from-purple-600/60 via-pink-500/40 to-yellow-400/30"
         badge="Now with Sensory Room!"
         badgeClass="bg-gradient-to-r from-yellow-400 to-orange-500 text-white"

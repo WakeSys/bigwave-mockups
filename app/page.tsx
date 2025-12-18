@@ -15,7 +15,7 @@ const verticals = [
     description: 'Ocean blues, summer vibes. Perfect for inflatable water parks and outdoor aqua attractions.',
     icon: Waves,
     gradient: 'from-cyan-500/80 to-blue-600/80',
-    heroImage: '/generated/aqua-park/hero.png',
+    heroImage: '/generated/aqua-park/hero.jpg',
   },
   {
     name: 'Trampoline Park',
@@ -23,7 +23,7 @@ const verticals = [
     description: 'Neon energy, urban edge. Bold design for indoor trampoline and ninja warrior facilities.',
     icon: Zap,
     gradient: 'from-pink-500/80 to-purple-600/80',
-    heroImage: '/generated/trampoline-park/hero.png',
+    heroImage: '/generated/trampoline-park/hero.jpg',
   },
   {
     name: 'Ropes Course',
@@ -31,7 +31,7 @@ const verticals = [
     description: 'Forest adventure, natural tones. Earthy design for aerial parks and zip line experiences.',
     icon: TreePine,
     gradient: 'from-emerald-500/80 to-green-600/80',
-    heroImage: '/generated/ropes-course/hero.png',
+    heroImage: '/generated/ropes-course/hero.jpg',
   },
   {
     name: 'Indoor Playground',
@@ -39,7 +39,7 @@ const verticals = [
     description: 'Playful colors, family friendly. Fun design for kids play centers and family entertainment.',
     icon: Baby,
     gradient: 'from-yellow-400/80 to-orange-500/80',
-    heroImage: '/generated/indoor-playground/hero.png',
+    heroImage: '/generated/indoor-playground/hero.jpg',
   },
   {
     name: 'Escape Room',
@@ -47,7 +47,7 @@ const verticals = [
     description: 'Dark mystery, golden accents. Atmospheric design for immersive escape room experiences.',
     icon: Key,
     gradient: 'from-amber-500/80 to-amber-700/80',
-    heroImage: '/generated/escape-room/hero.png',
+    heroImage: '/generated/escape-room/hero.jpg',
   },
   {
     name: 'Climbing Gym',
@@ -55,7 +55,7 @@ const verticals = [
     description: 'Bold typography, athletic vibe. Strong design for indoor climbing and bouldering facilities.',
     icon: Mountain,
     gradient: 'from-orange-500/80 to-red-600/80',
-    heroImage: '/generated/climbing-gym/hero.png',
+    heroImage: '/generated/climbing-gym/hero.jpg',
   },
 ];
 

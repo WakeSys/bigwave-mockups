@@ -23,7 +23,7 @@ const activities = [
     price: '$25/person',
     duration: '45 minutes',
     capacity: 'Up to 100 guests',
-    image: '/generated/aqua-park/gallery-1.png',
+    image: '/generated/aqua-park/gallery-1.jpg',
     features: ['Full obstacle course access', 'Life jacket included', 'Safety briefing', 'Locker rental available'],
   },
   {
@@ -32,7 +32,7 @@ const activities = [
     price: '$35/person',
     duration: '60 minutes',
     capacity: 'Up to 30 guests',
-    image: '/generated/ropes-course/gallery-1.png',
+    image: '/generated/ropes-course/gallery-1.jpg',
     features: ['All difficulty levels', 'Harness & helmet included', 'Trained guides', 'Photos available'],
   },
 ];
@@ -98,9 +98,9 @@ const pricing = [
 ];
 
 const galleryImages = [
-  { src: '/generated/aqua-park/gallery-1.png', alt: 'Families enjoying the aqua park' },
-  { src: '/generated/aqua-park/gallery-2.png', alt: 'Action shot on inflatable obstacles' },
-  { src: '/generated/aqua-park/gallery-3.png', alt: 'Sunset at the aqua park' },
+  { src: '/generated/aqua-park/gallery-1.jpg', alt: 'Families enjoying the aqua park' },
+  { src: '/generated/aqua-park/gallery-2.jpg', alt: 'Action shot on inflatable obstacles' },
+  { src: '/generated/aqua-park/gallery-3.jpg', alt: 'Sunset at the aqua park' },
 ];
 
 const contactInfo = {
@@ -129,7 +129,7 @@ export default function AquaParkPage() {
       <Hero
         title="Make a Splash This Summer"
         subtitle="Charleston's premier inflatable water park. Jump, climb, slide, and splash your way through 30+ obstacles on the lake."
-        backgroundImage="/generated/aqua-park/hero.png"
+        backgroundImage="/generated/aqua-park/hero.jpg"
         overlayColor="from-cyan-900/70 via-cyan-800/50 to-transparent"
         badge="Now Open for 2025 Season"
         badgeClass="bg-cyan-500/90 text-white"

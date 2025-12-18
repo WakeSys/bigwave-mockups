@@ -23,7 +23,7 @@ const activities = [
     price: '$24/person',
     duration: 'All day',
     capacity: 'Unlimited access',
-    image: '/generated/climbing-gym/gallery-3.png',
+    image: '/generated/climbing-gym/gallery-3.jpg',
     features: ['All climbing walls', 'Auto-belay access', 'Fitness area included', 'Belay certification required'],
   },
   {
@@ -32,7 +32,7 @@ const activities = [
     price: '$18/person',
     duration: 'All day',
     capacity: 'Drop-in anytime',
-    image: '/generated/climbing-gym/gallery-1.png',
+    image: '/generated/climbing-gym/gallery-1.jpg',
     features: ['Full bouldering access', 'Training boards', 'New problems monthly', 'No belay needed'],
   },
 ];
@@ -98,9 +98,9 @@ const pricing = [
 ];
 
 const galleryImages = [
-  { src: '/generated/climbing-gym/gallery-1.png', alt: 'Climber on overhang' },
-  { src: '/generated/climbing-gym/gallery-2.png', alt: 'Youth climbing class' },
-  { src: '/generated/climbing-gym/gallery-3.png', alt: 'Lead climbing wall' },
+  { src: '/generated/climbing-gym/gallery-1.jpg', alt: 'Climber on overhang' },
+  { src: '/generated/climbing-gym/gallery-2.jpg', alt: 'Youth climbing class' },
+  { src: '/generated/climbing-gym/gallery-3.jpg', alt: 'Lead climbing wall' },
 ];
 
 const contactInfo = {
@@ -130,7 +130,7 @@ export default function ClimbingGymPage() {
       <Hero
         title="REACH NEW HEIGHTS"
         subtitle="Denver's premier indoor climbing facility. 50-foot walls, massive bouldering cave, and world-class training."
-        backgroundImage="/generated/climbing-gym/hero.png"
+        backgroundImage="/generated/climbing-gym/hero.jpg"
         overlayColor="from-slate-900/80 via-slate-800/50 to-orange-900/30"
         badge="NEW ROUTES SET WEEKLY"
         badgeClass="bg-orange-500 text-white"

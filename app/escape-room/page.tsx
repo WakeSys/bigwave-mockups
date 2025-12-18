@@ -23,7 +23,7 @@ const activities = [
     price: '$32/person',
     duration: '60 minutes',
     capacity: '2-8 players',
-    image: '/generated/escape-room/hero.png',
+    image: '/generated/escape-room/hero.jpg',
     features: ['Difficulty: Intermediate', 'Egyptian theme', 'Physical puzzles', 'Hidden chambers'],
   },
   {
@@ -32,7 +32,7 @@ const activities = [
     price: '$32/person',
     duration: '60 minutes',
     capacity: '2-6 players',
-    image: '/generated/escape-room/gallery-1.png',
+    image: '/generated/escape-room/gallery-1.jpg',
     features: ['Difficulty: Advanced', 'Steampunk theme', 'Mechanical puzzles', 'Time pressure'],
   },
   {
@@ -41,7 +41,7 @@ const activities = [
     price: '$38/person',
     duration: '60 minutes',
     capacity: '2-8 players',
-    image: '/generated/escape-room/gallery-3.png',
+    image: '/generated/escape-room/gallery-3.jpg',
     features: ['Difficulty: Expert', 'Horror theme', 'Immersive actors', 'Not for faint-hearted'],
   },
 ];
@@ -106,9 +106,9 @@ const pricing = [
 ];
 
 const galleryImages = [
-  { src: '/generated/escape-room/gallery-1.png', alt: 'Steampunk escape room' },
-  { src: '/generated/escape-room/gallery-2.png', alt: 'Team solving puzzles' },
-  { src: '/generated/escape-room/gallery-3.png', alt: 'Horror themed corridor' },
+  { src: '/generated/escape-room/gallery-1.jpg', alt: 'Steampunk escape room' },
+  { src: '/generated/escape-room/gallery-2.jpg', alt: 'Team solving puzzles' },
+  { src: '/generated/escape-room/gallery-3.jpg', alt: 'Horror themed corridor' },
 ];
 
 const contactInfo = {
@@ -139,7 +139,7 @@ export default function EscapeRoomPage() {
       <Hero
         title="Can You Escape?"
         subtitle="Immersive puzzle rooms where every detail matters. Solve the mysteries. Beat the clock. Escape before it's too late."
-        backgroundImage="/generated/escape-room/hero.png"
+        backgroundImage="/generated/escape-room/hero.jpg"
         backgroundColor="bg-black"
         overlayColor="from-black/80 via-purple-900/50 to-amber-900/30"
         badge="New Room: The Asylum"

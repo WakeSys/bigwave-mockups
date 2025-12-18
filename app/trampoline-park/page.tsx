@@ -23,7 +23,7 @@ const activities = [
     price: '$22/person',
     duration: '60 minutes',
     capacity: 'Up to 150 guests',
-    image: '/generated/trampoline-park/gallery-1.png',
+    image: '/generated/trampoline-park/gallery-1.jpg',
     features: ['All trampoline zones', 'Grip socks included', 'Foam pit access', 'Dodgeball courts'],
   },
   {
@@ -32,7 +32,7 @@ const activities = [
     price: '$28/person',
     duration: '60 minutes',
     capacity: 'Up to 40 guests',
-    image: '/generated/trampoline-park/gallery-3.png',
+    image: '/generated/trampoline-park/gallery-3.jpg',
     features: ['Full obstacle course', 'Timed challenges', 'Leaderboard rankings', 'All skill levels'],
   },
 ];
@@ -98,9 +98,9 @@ const pricing = [
 ];
 
 const galleryImages = [
-  { src: '/generated/trampoline-park/gallery-1.png', alt: 'Athlete doing backflip' },
-  { src: '/generated/trampoline-park/gallery-2.png', alt: 'Birthday party fun' },
-  { src: '/generated/trampoline-park/gallery-3.png', alt: 'Foam pit action' },
+  { src: '/generated/trampoline-park/gallery-1.jpg', alt: 'Athlete doing backflip' },
+  { src: '/generated/trampoline-park/gallery-2.jpg', alt: 'Birthday party fun' },
+  { src: '/generated/trampoline-park/gallery-3.jpg', alt: 'Foam pit action' },
 ];
 
 const contactInfo = {
@@ -131,7 +131,7 @@ export default function TrampolineParkPage() {
       <Hero
         title="DEFY GRAVITY"
         subtitle="Charlotte's most extreme indoor trampoline park. Wall-to-wall trampolines, ninja courses, and epic foam pits."
-        backgroundImage="/generated/trampoline-park/hero.png"
+        backgroundImage="/generated/trampoline-park/hero.jpg"
         backgroundColor="bg-black"
         overlayColor="from-black/80 via-purple-900/40 to-pink-900/30"
         badge="NOW WITH NINJA WARRIOR COURSE"
