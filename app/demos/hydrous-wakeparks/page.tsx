@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
-import { Waves, Shield, Users, Clock, Sun, Droplets, Zap, Package } from 'lucide-react';
+import { Waves, Shield, Users, Sun, Droplets, Zap } from 'lucide-react';
 import { Hero, Features, Activities, Pricing, Gallery, Contact, Navbar, Footer, BookingPanelProvider } from '@/components';
 import { BOOKING_BASE_URL } from '@/lib/config';
 
@@ -147,7 +147,7 @@ const galleryImages = [
 
 const contactInfo = {
   address: '280 E Eldorado Pkwy, Little Elm, TX 75068',
-  phone: '(469) 298-0469',
+  phone: '(214) 310-1105',
   email: 'info@hydrouswakeparks.com',
   hours: [
     'Mon-Fri: 12pm - 8pm',
@@ -166,9 +166,9 @@ export default function HydrousWakeParksPage() {
       <Navbar
         logo={<HydrousLogo />}
         links={navLinks}
-        backgroundColor="bg-blue-900/95"
-        textColor="text-white"
-        buttonClass="bg-orange-500 text-white hover:bg-orange-600"
+        backgroundColor="bg-white/95"
+        textColor="text-gray-700"
+        buttonClass="bg-sky-500 text-white hover:bg-sky-600"
         alwaysShowBackground={true}
       />
       
@@ -176,11 +176,11 @@ export default function HydrousWakeParksPage() {
         title="Wake Up Your Summer"
         subtitle="North Texas' premier wake park destination. Cable wakeboarding and inflatable aqua park action in Little Elm, just minutes from Dallas. No experience needed - we'll teach you!"
         backgroundImage="https://www.hydrouswakeparks.com/assets/img/team/04.jpg"
-        overlayColor="from-blue-900/80 via-blue-800/60 to-blue-700/40"
+        overlayColor="from-sky-600/80 via-sky-500/60 to-sky-400/40"
         badge="Dallas-Fort Worth's #1 Wake Park"
-        badgeClass="bg-orange-500/90 text-white"
+        badgeClass="bg-sky-500/90 text-white"
         primaryButtonText="Book Your Session"
-        primaryButtonClass="bg-orange-500 text-white hover:bg-orange-600"
+        primaryButtonClass="bg-sky-500 text-white hover:bg-sky-600"
         secondaryButtonText="Explore Activities"
         secondaryButtonClass="border-2 border-white text-white hover:bg-white/20"
       />
@@ -189,19 +189,19 @@ export default function HydrousWakeParksPage() {
         title="Why Hydrous Wake Parks?"
         subtitle="The ultimate water sports experience in North Texas"
         features={features}
-        backgroundColor="bg-gradient-to-b from-white to-blue-50"
-        textColor="text-blue-900"
+        backgroundColor="bg-gradient-to-b from-white to-sky-50"
+        textColor="text-gray-800"
         cardBackgroundColor="bg-white"
-        cardTextColor="text-blue-900"
-        iconColor="text-orange-500"
+        cardTextColor="text-gray-800"
+        iconColor="text-sky-500"
       />
 
       <Activities
         title="Book Your Adventure"
         subtitle="Choose your activity and book online - instant confirmation"
         activities={activities}
-        accentColor="text-orange-600"
-        buttonClass="bg-orange-500 text-white hover:bg-orange-600"
+        accentColor="text-sky-600"
+        buttonClass="bg-sky-500 text-white hover:bg-sky-600"
         backgroundColor="bg-white"
       />
       
@@ -209,13 +209,13 @@ export default function HydrousWakeParksPage() {
         title="Session Pricing"
         subtitle="All prices plus 8.25% tax. Book online for guaranteed spots!"
         tiers={pricing}
-        backgroundColor="bg-blue-50"
-        textColor="text-blue-900"
+        backgroundColor="bg-sky-50"
+        textColor="text-gray-800"
         cardBackgroundColor="bg-white"
-        cardTextColor="text-blue-900"
-        highlightColor="bg-orange-500"
-        buttonClass="bg-orange-500 text-white hover:bg-orange-600"
-        comingSoonBadgeClass="bg-blue-100 text-blue-700"
+        cardTextColor="text-gray-800"
+        highlightColor="bg-sky-500"
+        buttonClass="bg-sky-500 text-white hover:bg-sky-600"
+        comingSoonBadgeClass="bg-sky-100 text-sky-700"
       />
 
       {/* Rentals Section */}
@@ -223,32 +223,32 @@ export default function HydrousWakeParksPage() {
         title="Rental Packages"
         subtitle="Add-ons available for Main Cable and Beginners Slow Ride sessions"
         tiers={rentals}
-        backgroundColor="bg-gradient-to-b from-blue-50 to-white"
-        textColor="text-blue-900"
+        backgroundColor="bg-gradient-to-b from-sky-50 to-white"
+        textColor="text-gray-800"
         cardBackgroundColor="bg-white"
-        cardTextColor="text-blue-900"
-        highlightColor="bg-orange-500"
-        buttonClass="bg-orange-500 text-white hover:bg-orange-600"
-        comingSoonBadgeClass="bg-amber-100 text-amber-700"
+        cardTextColor="text-gray-800"
+        highlightColor="bg-sky-500"
+        buttonClass="bg-sky-500 text-white hover:bg-sky-600"
+        comingSoonBadgeClass="bg-sky-100 text-sky-700"
       />
 
       {/* Waiver Notice */}
-      <section className="py-12 px-6 bg-orange-50">
+      <section className="py-12 px-6 bg-sky-500">
         <div className="max-w-4xl mx-auto text-center">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <div className="p-3 bg-orange-100 rounded-xl">
-              <Shield className="w-6 h-6 text-orange-600" />
+            <div className="p-3 bg-white/20 rounded-xl">
+              <Shield className="w-6 h-6 text-white" />
             </div>
-            <h3 className="text-xl font-bold text-blue-900">Waiver Required</h3>
+            <h3 className="text-xl font-bold text-white">Waiver Required</h3>
           </div>
-          <p className="text-blue-800 mb-4">
+          <p className="text-white/90 mb-4">
             All participants must complete a waiver before their session. Save time by signing online before you arrive!
           </p>
           <a 
-            href="https://waiver.smartwaiver.com/w/3tymkwentzyjmurerewf4d/web/"
+            href="https://staging.wakesys.app/hydrouswakeparks/auth/onsite-signup"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-orange-500 text-white rounded-full font-semibold hover:bg-orange-600 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-white text-sky-600 rounded-full font-semibold hover:bg-sky-50 transition-colors"
           >
             Sign Waiver Online
           </a>
@@ -260,29 +260,29 @@ export default function HydrousWakeParksPage() {
         subtitle="See what awaits you at North Texas' best wake park"
         images={galleryImages}
         backgroundColor="bg-white"
-        textColor="text-blue-900"
+        textColor="text-gray-800"
       />
       
       <Contact
         title="Visit Us"
         subtitle="Located in Little Elm, just north of Dallas"
         contact={contactInfo}
-        backgroundColor="bg-gradient-to-b from-white to-blue-50"
-        textColor="text-blue-900"
+        backgroundColor="bg-gradient-to-b from-white to-sky-50"
+        textColor="text-gray-800"
         cardBackgroundColor="bg-white"
-        cardTextColor="text-blue-900"
-        iconColor="text-orange-500"
+        cardTextColor="text-gray-800"
+        iconColor="text-sky-500"
         mapEmbedUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3343.8!2d-96.9456!3d33.1634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c3c1234567890%3A0x1234567890abcdef!2s280%20E%20Eldorado%20Pkwy%2C%20Little%20Elm%2C%20TX%2075068!5e0!3m2!1sen!2sus!4v1234567890"
       />
       
       <Footer
-        logo={<HydrousLogo />}
+        logo={<HydrousLogo className="brightness-0 invert" />}
         tagline="Wake Up Your Summer - Since 2014"
         socialLinks={[
           { platform: 'facebook', url: 'https://www.facebook.com/hydrouswakeparks' },
           { platform: 'instagram', url: 'https://www.instagram.com/hydrouswakeparks' },
         ]}
-        backgroundColor="bg-blue-900"
+        backgroundColor="bg-sky-500"
         textColor="text-white"
       />
     </main>

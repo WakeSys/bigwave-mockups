@@ -26,6 +26,15 @@ const demoPark = [
     color: 'from-emerald-500 to-teal-600',
     icon: Anchor,
   },
+  {
+    slug: 'hydrous-wakeparks',
+    name: 'Hydrous Wake Parks',
+    location: 'Little Elm, TX, USA',
+    description: 'North Texas premier wake park with cable wakeboarding and inflatable aqua park, just north of Dallas on Lewisville Lake.',
+    activities: ['Cable Wakeboarding', 'Aqua Park', 'Beginner Sessions'],
+    color: 'from-blue-500 to-orange-500',
+    icon: Zap,
+  },
 ];
 
 export default function DemosPage() {

@@ -19,6 +19,7 @@ export const parkSlugs = {
 export const demoParkSlugs = {
   'bli-bli-watersports': 'blibliwatersports',
   'aqua-chimp-kent': 'aquachimpkent',
+  'hydrous-wakeparks': 'hydrouswakeparks',
 } as const;
 
 export function getBookingUrl(vertical: keyof typeof parkSlugs): string {
