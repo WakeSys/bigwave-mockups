@@ -27,7 +27,6 @@ export function BookingPanelProvider({
     lastFocusedEl: null,
   });
   const [testNoticeExpanded, setTestNoticeExpanded] = useState(false);
-  const [showTestNoticeBar, setShowTestNoticeBar] = useState(false); // Hidden by default, shown on checkout
   
   const panelRef = useRef<HTMLDivElement>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -41,19 +40,15 @@ export function BookingPanelProvider({
   const openPanel = useCallback((url?: string) => {
     const targetUrl = url || bookingUrl;
     
-    // On mobile, navigate directly (no embed param, show full branding)
+    // On mobile, navigate directly
     if (isMobile()) {
       window.location.href = targetUrl;
       return;
     }
 
-    // Add embed=true param for iframe mode (hides logo in booking system)
-    const embedUrl = new URL(targetUrl, window.location.origin);
-    embedUrl.searchParams.set('embed', 'true');
-    
     // Set iframe src
     if (iframeRef.current) {
-      iframeRef.current.src = embedUrl.toString();
+      iframeRef.current.src = targetUrl;
     }
 
     setState({
@@ -131,24 +126,6 @@ export function BookingPanelProvider({
     return () => window.removeEventListener('book-now' as keyof WindowEventMap, handleBookNow as EventListener);
   }, [openPanel]);
 
-  // Listen for postMessage from booking iframe to detect checkout page
-  useEffect(() => {
-    const handleMessage = (event: MessageEvent) => {
-      // Accept messages from booking system
-      if (event.data?.type === 'booking-page') {
-        // Show test notice only on checkout page
-        const isCheckoutPage = event.data.page === 'checkout';
-        setShowTestNoticeBar(isCheckoutPage);
-        // Auto-expand on checkout page
-        if (isCheckoutPage) {
-          setTestNoticeExpanded(true);
-        }
-      }
-    };
-
-    window.addEventListener('message', handleMessage);
-    return () => window.removeEventListener('message', handleMessage);
-  }, []);
 
   return (
     <>
@@ -180,7 +157,7 @@ export function BookingPanelProvider({
         </div>
         
         {/* Test Payment Notice */}
-        {showTestNotice && showTestNoticeBar && (
+        {showTestNotice && (
           <div className="bp-test-notice">
             <button 
               className="bp-test-notice-toggle"
