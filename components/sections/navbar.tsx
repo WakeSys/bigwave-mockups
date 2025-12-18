@@ -47,8 +47,8 @@ export function Navbar({
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Use scrolled styling when actually scrolled OR when alwaysShowBackground is true
-  const showBackground = isScrolled || alwaysShowBackground;
+  // Use scrolled styling when actually scrolled, alwaysShowBackground is true, OR mobile menu is open
+  const showBackground = isScrolled || alwaysShowBackground || isMobileMenuOpen;
 
   return (
     <nav
