@@ -18,7 +18,7 @@ export const parkSlugs = {
 // Demo park slugs for real customer demos
 export const demoParkSlugs = {
   'bli-bli-watersports': 'bli-bli-watersports',
-  'aqua-chimp-kent': 'aqua-chimp-kent',
+  'aqua-chimp-kent': 'aquachimpkent',
 } as const;
 
 export function getBookingUrl(vertical: keyof typeof parkSlugs): string {

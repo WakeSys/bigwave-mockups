@@ -113,7 +113,7 @@ const contactInfo = {
 };
 
 export default function AquaChimpKentPage() {
-  const bookingUrl = `${BOOKING_BASE_URL}/aqua-chimp-kent/booking`;
+  const bookingUrl = `${BOOKING_BASE_URL}/aquachimpkent/booking`;
 
   return (
     <main className="font-[family-name:var(--font-quicksand)]">
