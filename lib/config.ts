@@ -15,6 +15,12 @@ export const parkSlugs = {
   'climbing-gym': 'summit-climbing',
 } as const;
 
+// Demo park slugs for real customer demos
+export const demoParkSlugs = {
+  'bli-bli-watersports': 'bli-bli-watersports',
+  'aqua-chimp-kent': 'aqua-chimp-kent',
+} as const;
+
 export function getBookingUrl(vertical: keyof typeof parkSlugs): string {
   const parkSlug = parkSlugs[vertical];
   return `${BOOKING_BASE_URL}/${parkSlug}/booking`;

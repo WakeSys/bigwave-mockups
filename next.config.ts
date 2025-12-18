@@ -7,6 +7,18 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'oaidalleapiprodscus.blob.core.windows.net',
       },
+      {
+        protocol: 'https',
+        hostname: 'www.blibliwatersports.com.au',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.aquachimpkent.co.uk',
+      },
+      {
+        protocol: 'https',
+        hostname: 'static.wixstatic.com',
+      },
     ],
   },
 };
