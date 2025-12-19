@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { Waves, Anchor, Lock, ArrowRight, Zap } from 'lucide-react';
+import { Waves, Anchor, Lock, ArrowRight, Zap, Droplets } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Park Demos | wakesys',
@@ -34,6 +34,15 @@ const demoPark = [
     activities: ['Cable Wakeboarding', 'Aqua Park', 'Beginner Sessions'],
     color: 'from-blue-500 to-orange-500',
     icon: Zap,
+  },
+  {
+    slug: 'aquapark-dormagen',
+    name: 'Aquapark Dormagen',
+    location: 'Dormagen, NRW, Germany',
+    description: 'Über 1.000 m² Wasserspaß am Straberger See! Aufblasbarer Wasserpark mit Rutschen, Trampolinen und Happy Hour Angeboten.',
+    activities: ['Aqua Park', 'Happy Hour', 'Gruppenevents'],
+    color: 'from-cyan-500 to-cyan-600',
+    icon: Droplets,
   },
 ];
 
@@ -127,3 +136,4 @@ export default function DemosPage() {
     </main>
   );
 }
+

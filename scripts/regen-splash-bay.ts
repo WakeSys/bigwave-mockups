@@ -50,3 +50,4 @@ async function regenSplashBay() {
 
 regenSplashBay();
 
+

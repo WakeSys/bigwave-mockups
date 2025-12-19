@@ -20,6 +20,7 @@ export const demoParkSlugs = {
   'bli-bli-watersports': 'blibliwatersports',
   'aqua-chimp-kent': 'aquachimpkent',
   'hydrous-wakeparks': 'hydrouswakeparks',
+  'aquapark-dormagen': 'aquapark-dormagen',
 } as const;
 
 export function getBookingUrl(vertical: keyof typeof parkSlugs): string {
